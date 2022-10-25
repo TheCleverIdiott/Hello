@@ -90,4 +90,6 @@ preds = rf.predict(test[predictors])
 # Now we need to figure out a way to determine the accuaracy of the model.
 # Important choice, so we'rte gonna try a couple of different metrics and see which one makews more sense.
 from sklearn.metrics import accuracy_score
-# accuracy s
+
+acc = accuracy_score(test["target"], preds)
+acc
